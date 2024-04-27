@@ -32,8 +32,8 @@
         <span>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >The Creator's Corner</a
+              <a class="nav-link active" aria-current="page" href="#">
+                {{ "home.title" | translate }}</a
               >
             </li>
             <li class="nav-item dropdown">
@@ -61,8 +61,6 @@
   </nav>
 </header>
 
-<h1>{{ "home" | translate }}</h1>
-
 <div class="dropdown">
   <button
     class="btn btn-secondary dropdown-toggle"
@@ -72,6 +70,7 @@
     aria-expanded="false"
   >
     Dropdown button
+    <i class="fas fa-language"></i>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
     <li>

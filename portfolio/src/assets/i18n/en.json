@@ -1,3 +1,5 @@
 {
-  "home": "Hello World!"
+  "home": {
+    "title": "The Creator's Corner"
+  }
 }

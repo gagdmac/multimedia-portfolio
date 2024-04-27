@@ -1,3 +1,5 @@
 {
-  "home": "Hola mundo!"
+  "home": {
+    "title": "La Esquina del Creador"
+  }
 }
