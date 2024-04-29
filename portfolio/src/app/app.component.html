@@ -63,7 +63,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">
-                  {{ "home.menu.liOne" | translate }}</a
+                  {{ "menu.liOne" | translate }}</a
                 >
               </li>
               <li class="nav-item dropdown">
@@ -75,23 +75,23 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  {{ "home.menu.liTwo" | translate }}
+                  {{ "menu.liTwo" | translate }}
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a class="dropdown-item" href="#">
-                      {{ "home.submenu.liOne" | translate }}</a
+                      {{ "submenu.liOne" | translate }}</a
                     >
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">{{
-                      "home.submenu.liTwo" | translate
+                      "submenu.liTwo" | translate
                     }}</a>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="#">{{
-                      "home.submenu.liThree" | translate
+                      "submenu.liThree" | translate
                     }}</a>
                   </li>
                 </ul>
@@ -118,8 +118,21 @@
 
   <section class="features">
     <div class="row">
-      <div class="col-3 cb1">
-        <h2 class="display-4">Welcome to Our Website!</h2>
+      <div class="col-3 fs-0 open-sans open-sans-titles cb1">
+        <p>
+          <span class="cb2">{{ "home.titleA" | translate }}</span>
+        </p>
+        <p>
+          <span class="fs-A cb3">{{ "home.titleB" | translate }}</span>
+        </p>
+        <p>
+          <span class="cb4">{{ "home.titleC" | translate }}</span>
+        </p>
+        <!-- <h1 class="fs-0 open-sans open-sans-titles">
+          <span class=""> {{ "home.titleA" | translate }}</span>
+          <span class="fs-A ml-n1"> {{ "home.titleB" | translate }}</span>
+          <span> {{ "home.titleC" | translate }}</span>
+        </h1> -->
       </div>
       <div class="col-9 cb2">Column</div>
     </div>

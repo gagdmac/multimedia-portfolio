@@ -10,23 +10,84 @@
 .cb4 {
   border: 1px solid purple;
 }
+////////////////////////////////////////////////////////////
+////////////////// Accesibility ////////////////////////////
+//////////////////////////////////////////////////////////
+.sr-only {
+  position: absolute;
+  width: rem-calc(1);
+  height: rem-calc(1);
+  padding: 0;
+  margin: rem-calc(-1);
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
-///////////////////////////////
-//////////////////////////////
-/// container ///////////////////
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
 
-// //CARET DROPDOWN
+.skiplink {
+  background: transparent;
+  color: #212121;
+  left: 0;
+  padding: rem-calc(16 24);
+  position: absolute;
+  top: -rem-calc(-72);
+  transition: all 0.2s ease-in-out;
+  z-index: 1040 !important;
+  text-decoration: underline !important;
+}
 
-// .dropdown-toggle::after {
-//   vertical-align: 0.1rem !important;
-// }
+.skiplink:focus {
+  background: #ffffff;
+  left: 0;
+  outline: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease-in-out;
+}
 
-// //btn
-// .btn {
-//   --bs-btn-padding-x: 0.5rem !important;
-//   --bs-btn-padding-y: 0.2rem !important;
-// }
+/* Styles where only focus is supported */
+input:focus,
+button:focus,
+a[href]:focus {
+  outline: #7fb7ff dotted rem-calc(3);
+  outline-offset: rem-calc(2);
+}
 
-// .root {
-//   --bs-border-radius: 12rem !important;
-// }
+/* Reset styles where focus-visible is supported (we'll add them back
+ * in the next block)
+*/
+input:focus,
+button:focus:not(:focus-visible),
+a[href]:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* The final, focus-visible styles. You could elect to make this even more
+ * obvious, if stakeholders or whomever is pushing against focus styles this
+ * week are now off your back.
+*/
+input:focus,
+button:focus-visible,
+a[href]:focus-visible {
+  outline: #7fb7ff dotted rem-calc(3);
+  outline-offset: rem-calc(2);
+}
+
+////////////////////////////////////////////////////////////
+////////////////// GENERAL CLASES /////////////////////////
+//////////////////////////////////////////////////////////
+
+html,
+body {
+  font-family: SourceSansPro;
+}

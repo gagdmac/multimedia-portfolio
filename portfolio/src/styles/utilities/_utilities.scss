@@ -1,0 +1,26 @@
+//////////////
+/// FOTNS ///
+////////////
+
+.fs {
+  &-0 {
+    font-size: rem-calc(56);
+  }
+
+  &-A {
+    font-size: rem-calc(130);
+  }
+}
+
+////////////////
+/// MARGINS ///
+//////////////
+
+//negative
+.m {
+  &l {
+    &-n1 {
+      margin-left: -10px;
+    }
+  }
+}

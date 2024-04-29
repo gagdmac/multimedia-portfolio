@@ -1,13 +1,17 @@
 {
+  "menu": {
+    "liOne": "La esquina del creador",
+    "liTwo": "Showtime: La galería del Talento"
+  },
+  "submenu": {
+    "liOne": "Projectos",
+    "liTwo": "Prototipos",
+    "liThree": "Todo lo demas"
+  },
+
   "home": {
-    "menu": {
-      "liOne": "La esquina del creador",
-      "liTwo": "Showtime: La galería del Talento"
-    },
-    "submenu": {
-      "liOne": "Projectos",
-      "liTwo": "Prototipos",
-      "liThree": "Todo lo demas"
-    }
+    "titleA": "Accessible",
+    "titleB": "User",
+    "titleC": "Experience & Interface"
   }
 }

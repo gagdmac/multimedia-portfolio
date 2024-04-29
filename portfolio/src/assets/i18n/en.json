@@ -1,13 +1,17 @@
 {
+  "menu": {
+    "liOne": "The Creator's Corner",
+    "liTwo": "Showtime: The Talent Gallery"
+  },
+  "submenu": {
+    "liOne": "Projects",
+    "liTwo": "Prototypes",
+    "liThree": "Everything Else"
+  },
+
   "home": {
-    "menu": {
-      "liOne": "The Creator's Corner",
-      "liTwo": "Showtime: The Talent Gallery"
-    },
-    "submenu": {
-      "liOne": "Projects",
-      "liTwo": "Prototypes",
-      "liThree": "Everything Else"
-    }
+    "titleA": "Accessible",
+    "titleB": "User",
+    "titleC": "Experience & Interface"
   }
 }
