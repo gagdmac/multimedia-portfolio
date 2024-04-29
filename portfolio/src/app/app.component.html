@@ -1,121 +1,128 @@
-<header class="container-fluid g-0">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <span class="">
-        <a class="navbar-brand pl-3" href="#">
-          <img
-            src="../assets/img/gagd-logo.svg"
-            alt="Gabriel Garcia LOGO"
-            width="40"
-            height="22"
-            class="ms-2 d-inline-block align-text-top"
-          />
-        </a>
-      </span>
+<header class="container-fluid bg-dark cb3">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <span class="">
+          <a class="navbar-brand pl-3" href="#">
+            <img
+              src="../assets/img/gagd-logo.svg"
+              alt="Gabriel Garcia LOGO"
+              width="40"
+              height="22"
+              class="ms-2 d-inline-block align-text-top"
+            />
+          </a>
+        </span>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div
-        class="collapse navbar-collapse d-flex justify-content-end"
-        id="navbarSupportedContent"
-      >
-        <span>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                {{ "home.title" | translate }}</a
-              >
+        <div class="dropdown">
+          <button
+            class="btn btn-light dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="../assets/img/language-light.svg"
+              alt="Gabriel Garcia LOGO"
+              height="25"
+              class="d-inline-block"
+            />
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li>
+              <button class="dropdown-item" (click)="useLanguage('es')">
+                Español
+              </button>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Showtime: The Talent Gallery
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Projects</a></li>
-                <li><a class="dropdown-item" href="#">Prototypes</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Everything Else</a></li>
-              </ul>
+            <li>
+              <button class="dropdown-item" (click)="useLanguage('en')">
+                English
+              </button>
             </li>
           </ul>
-        </span>
+        </div>
+
+        <div
+          class="collapse navbar-collapse d-flex justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <span>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  {{ "home.menu.liOne" | translate }}</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  {{ "home.menu.liTwo" | translate }}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      {{ "home.submenu.liOne" | translate }}</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">{{
+                      "home.submenu.liTwo" | translate
+                    }}</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">{{
+                      "home.submenu.liThree" | translate
+                    }}</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </span>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
 
-<div class="dropdown">
-  <button
-    class="btn btn-secondary dropdown-toggle"
-    type="button"
-    id="dropdownMenuButton1"
-    data-bs-toggle="dropdown"
-    aria-expanded="false"
-  >
-    Dropdown button
-    <i class="fas fa-language"></i>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li>
-      <button class="dropdown-item" (click)="useLanguage('es')">Español</button>
-    </li>
-    <li>
-      <button class="dropdown-item" (click)="useLanguage('en')">English</button>
-    </li>
-  </ul>
-</div>
-
-<main class="container-fluid">
-  <section class="hero">
+<main class="container mt-5">
+  <!-- <section class="hero">
     <div class="cb1">
       <h2 class="display-4">Welcome to Our Website!</h2>
       <p>
         This is a brief introduction describing the website's purpose and what
         visitors can expect to find here.
       </p>
-      <!-- <a href="#" class="btn btn-primary">Learn More</a> -->
+      <a href="#" class="btn btn-primary">Learn More</a>
     </div>
-  </section>
+  </section> -->
 
   <section class="features">
-    <h3>Our Services</h3>
-    <ul class="row row-cols-1 row-cols-md-3 g-4">
-      <li class="col">
-        <article>
-          <h4>Feature 1</h4>
-          <p>Detailed explanation of the first service offered.</p>
-        </article>
-      </li>
-      <li class="col">
-        <article>
-          <h4>Feature 2</h4>
-          <p>Detailed explanation of the second service offered.</p>
-        </article>
-      </li>
-      <li class="col">
-        <article>
-          <h4>Feature 3</h4>
-          <p>Detailed explanation of the third service offered.</p>
-        </article>
-      </li>
-    </ul>
+    <div class="row">
+      <div class="col-3 cb1">
+        <h2 class="display-4">Welcome to Our Website!</h2>
+      </div>
+      <div class="col-9 cb2">Column</div>
+    </div>
   </section>
 
   <section class="portfolio">

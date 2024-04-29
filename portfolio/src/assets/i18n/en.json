@@ -1,5 +1,13 @@
 {
   "home": {
-    "title": "The Creator's Corner"
+    "menu": {
+      "liOne": "The Creator's Corner",
+      "liTwo": "Showtime: The Talent Gallery"
+    },
+    "submenu": {
+      "liOne": "Projects",
+      "liTwo": "Prototypes",
+      "liThree": "Everything Else"
+    }
   }
 }

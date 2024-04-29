@@ -1,5 +1,13 @@
 {
   "home": {
-    "title": "La Esquina del Creador"
+    "menu": {
+      "liOne": "La esquina del creador",
+      "liTwo": "Showtime: La galería del Talento"
+    },
+    "submenu": {
+      "liOne": "Projectos",
+      "liTwo": "Prototipos",
+      "liThree": "Todo lo demas"
+    }
   }
 }
