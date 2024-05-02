@@ -1,7 +1,7 @@
 {
   "menu": {
     "liOne": "The Creator's Corner",
-    "liTwo": "Showtime: The Talent Gallery"
+    "liTwo": "Showtime: The Gallery"
   },
   "submenu": {
     "liOne": "Projects",
@@ -12,6 +12,8 @@
   "home": {
     "titleA": "Accessible",
     "titleB": "User",
-    "titleC": "Experience & Interface"
+    "titleC": "Experience",
+    "titleD": "&",
+    "titleE": "Interface"
   }
 }

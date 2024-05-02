@@ -1,7 +1,7 @@
 {
   "menu": {
-    "liOne": "La esquina del creador",
-    "liTwo": "Showtime: La galería del Talento"
+    "liOne": "La Esquina del Creador",
+    "liTwo": "Showtime: La Galería"
   },
   "submenu": {
     "liOne": "Projectos",
@@ -12,6 +12,8 @@
   "home": {
     "titleA": "Accessible",
     "titleB": "User",
-    "titleC": "Experience & Interface"
+    "titleC": "Experience",
+    "titleD": "&",
+    "titleE": "Interface"
   }
 }

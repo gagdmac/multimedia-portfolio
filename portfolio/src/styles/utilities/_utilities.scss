@@ -7,8 +7,15 @@
     font-size: rem-calc(56);
   }
 
+  &-01 {
+    font-size: rem-calc(53.1);
+  }
+  &-02 {
+    font-size: rem-calc(63.4);
+  }
+
   &-A {
-    font-size: rem-calc(130);
+    font-size: rem-calc(131.2);
   }
 }
 
@@ -20,7 +27,21 @@
 .m {
   &l {
     &-n1 {
-      margin-left: -10px;
+      margin-left: rem-calc(-10) !important;
     }
   }
+
+  &t {
+    &-n1 {
+      margin-top: rem-calc(-300) !important;
+    }
+  }
+}
+
+////////////////
+/// PARAGRAPH ///
+//////////////
+
+p {
+  margin-bottom: 0;
 }
