@@ -1,0 +1,117 @@
+<header class="container-fluid bg-dark cb3">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!--LOGO STARTS-->
+        <a aria-current="page" routerLink="/" routerLinkActive="active">
+          <img
+            src="../assets/img/gagd-logo.svg"
+            alt="Gabriel Garcia LOGO"
+            width="40"
+            height="22"
+            class="ms-2 d-inline-block align-text-top"
+          />
+        </a>
+
+        <!--LOGO ENDS-->
+
+        <!--APP MENU toggler-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--APP LANGUAGUES SELECTION STARTS-->
+        <div class="dropdown">
+          <button
+            class="btn btn-light dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="../assets/img/language-light.svg"
+              alt="Gabriel Garcia LOGO"
+              height="25"
+              class="d-inline-block"
+            />
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li>
+              <button class="dropdown-item" (click)="useLanguage('es')">
+                Español
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item" (click)="useLanguage('en')">
+                English
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!--APP LANGUAGUES SELECTION ENDS-->
+
+        <!--APP MENU STARTS-->
+        <div
+          class="collapse navbar-collapse d-flex justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <span>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  routerLink="me"
+                  routerLinkActive="active"
+                >
+                  {{ "menu.liOne" | translate }}</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  {{ "menu.liTwo" | translate }}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" routerLink="projects">
+                      {{ "submenu.liOne" | translate }}</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" routerLink="prototypes">{{
+                      "submenu.liTwo" | translate
+                    }}</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" routerLink="designs">{{
+                      "submenu.liThree" | translate
+                    }}</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </span>
+        </div>
+        <!--APP MENU ENDS-->
+      </div>
+    </nav>
+  </div>
+</header>
