@@ -2,17 +2,20 @@
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <span class="">
-          <a class="navbar-brand pl-3" href="#">
-            <img
-              src="../assets/img/gagd-logo.svg"
-              alt="Gabriel Garcia LOGO"
-              width="40"
-              height="22"
-              class="ms-2 d-inline-block align-text-top"
-            />
-          </a>
-        </span>
+        <a
+          class="pl-3"
+          aria-current="page"
+          routerLink="/"
+          routerLinkActive="active"
+        >
+          <img
+            src="../assets/img/gagd-logo.svg"
+            alt="Gabriel Garcia LOGO"
+            width="40"
+            height="22"
+            class="ms-2 d-inline-block align-text-top"
+          />
+        </a>
 
         <button
           class="navbar-toggler"
@@ -27,20 +30,23 @@
         </button>
 
         <div class="dropdown">
-          <button
-            class="btn btn-light dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton1"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <img
-              src="../assets/img/language-light.svg"
-              alt="Gabriel Garcia LOGO"
-              height="25"
-              class="d-inline-block"
-            />
-          </button>
+          <span class="ms-4">
+            <button
+              class="btn btn-light dropdown-toggle pl-4"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="../assets/img/language-light.svg"
+                alt="Gabriel Garcia LOGO"
+                height="25"
+                class="d-inline-block"
+              />
+            </button>
+          </span>
+
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li>
               <button class="dropdown-item" (click)="useLanguage('es')">
@@ -62,7 +68,12 @@
           <span>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  routerLink="me"
+                  routerLinkActive="active"
+                >
                   {{ "menu.liOne" | translate }}</a
                 >
               </li>
@@ -79,18 +90,18 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" routerLink="projects">
                       {{ "submenu.liOne" | translate }}</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">{{
+                    <a class="dropdown-item" routerLink="prototypes">{{
                       "submenu.liTwo" | translate
                     }}</a>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#">{{
+                    <a class="dropdown-item" routerLink="designs">{{
                       "submenu.liThree" | translate
                     }}</a>
                   </li>
@@ -104,8 +115,10 @@
   </div>
 </header>
 
+<!-- app.component.html  -->
+
 <main class="container mt-5">
-  <!-- <section class="hero">
+  <!-- KO  <section class="hero">
     <div class="cb1">
       <h2 class="display-4">Welcome to Our Website!</h2>
       <p>
@@ -117,7 +130,9 @@
   </section> -->
 
   <section class="features lh-1">
-    <div class="row">
+    <div class="d-flex cb4">
+      <app-home></app-home>
+      <!--
       <div class="col-4 fs-0 open-sans open-sans-titles cb1">
         <p>
           <span class="cb2">{{ "home.titleA" | translate }}</span>
@@ -134,13 +149,10 @@
         <p>
           <span class="fs-02 cb2">{{ "home.titleE" | translate }}</span>
         </p>
-        <!-- <h1 class="fs-0 open-sans open-sans-titles">
-          <span class=""> {{ "home.titleA" | translate }}</span>
-          <span class="fs-A ml-n1"> {{ "home.titleB" | translate }}</span>
-          <span> {{ "home.titleC" | translate }}</span>
-        </h1> -->
+      </div> -->
+      <div class="flex-grow-1 cb2">
+        <router-outlet></router-outlet>
       </div>
-      <div class="col-8 cb2">Column</div>
     </div>
   </section>
 
