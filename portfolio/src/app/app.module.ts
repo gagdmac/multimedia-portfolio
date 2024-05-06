@@ -19,6 +19,9 @@ import { MeComponent } from './components/me/me.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { PrototypesComponent } from './components/prototypes/prototypes.component';
 import { DesignsComponent } from './components/designs/designs.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { FooterComponent } from './core/footer/footer.component';
+import { HeaderComponent } from './core/header/header.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,9 @@ import { DesignsComponent } from './components/designs/designs.component';
     ProjectsComponent,
     PrototypesComponent,
     DesignsComponent,
+    PageNotFoundComponent,
+    FooterComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
