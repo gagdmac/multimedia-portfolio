@@ -11,11 +11,11 @@
     font-size: rem-calc(53.1);
   }
   &-02 {
-    font-size: rem-calc(63.4);
+    font-size: rem-calc(51.84);
   }
 
   &-A {
-    font-size: rem-calc(131.2);
+    font-size: rem-calc(131.4);
   }
 }
 
@@ -44,4 +44,16 @@
 
 p {
   margin-bottom: 0;
+}
+
+////////////////
+/// LINE HEIGTH ///
+//////////////
+
+.l {
+  &h {
+    &-0 {
+      line-height: 0.8 !important;
+    }
+  }
 }
