@@ -57,3 +57,27 @@ p {
     }
   }
 }
+
+//////////////////////////////////////
+///////////// RESPONSIVE ////////////
+////////////////////////////////////
+
+//MEDIA
+@include respond-below(sm) {
+  .fs {
+    &-0 {
+      font-size: rem-calc(48);
+    }
+
+    &-01 {
+      font-size: rem-calc(45.6);
+    }
+    &-02 {
+      font-size: rem-calc(44);
+    }
+
+    &-A {
+      font-size: rem-calc(113.28);
+    }
+  }
+}
