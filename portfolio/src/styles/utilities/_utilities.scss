@@ -11,7 +11,7 @@
     font-size: rem-calc(53.1);
   }
   &-02 {
-    font-size: rem-calc(51.84);
+    font-size: rem-calc(51.52);
   }
 
   &-A {
@@ -60,7 +60,8 @@ p {
 
 //////////////////////////////////////
 ///////////// RESPONSIVE ////////////
-////////////////////////////////////
+/////////// ACCESIBILITY ///////////
+///////////////////////////////////
 
 //MEDIA
 @include respond-below(sm) {
@@ -73,7 +74,7 @@ p {
       font-size: rem-calc(45.6);
     }
     &-02 {
-      font-size: rem-calc(44);
+      font-size: rem-calc(44.16);
     }
 
     &-A {
