@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+
+//ANGULAR MATERIAL
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatCardModule } from '@angular/material/card';
+import { MatSelectModule } from '@angular/material/select';
 
 //routing
 import appRoutes from './routerConfig';
@@ -22,6 +27,7 @@ import { DesignsComponent } from './components/designs/designs.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HeaderComponent } from './core/header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -36,6 +42,12 @@ import { HeaderComponent } from './core/header/header.component';
     HeaderComponent,
   ],
   imports: [
+    //ANGULAR MATERIAL
+    MatCardModule,
+    MatSlideToggleModule,
+    MatSelectModule,
+    //ANGULAR MATERIAL
+    ReactiveFormsModule,
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     // ngx-translate and the loader module
@@ -47,6 +59,7 @@ import { HeaderComponent } from './core/header/header.component';
         deps: [HttpClient],
       },
     }),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

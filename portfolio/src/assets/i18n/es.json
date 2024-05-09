@@ -1,4 +1,8 @@
 {
+  "languages": {
+    "espanol": "Español",
+    "english": "English"
+  },
   "menu": {
     "liOne": "La Esquina del Creador",
     "liTwo": "Showtime: La Galería"

@@ -82,3 +82,9 @@ p {
     }
   }
 }
+
+.select {
+  &-bn {
+    border: none !important;
+  }
+}

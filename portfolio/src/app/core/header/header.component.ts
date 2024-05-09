@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+// import { FormlyFieldConfig } from '@ngx-formly/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -6,11 +8,16 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
-  constructor(private translate: TranslateService) {
+  form = new FormGroup({});
+  model: any = {};
+
+  constructor(public translate: TranslateService) {
     translate.setDefaultLang('en');
     translate.use('en');
-  }
-  useLanguage(language: string): void {
-    this.translate.use(language);
+    translate.addLangs(['en', 'es']);
+
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
+    this.model.lang = translate.currentLang;
   }
 }

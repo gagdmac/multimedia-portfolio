@@ -1,4 +1,8 @@
 {
+  "languages": {
+    "espanol": "Español",
+    "english": "English"
+  },
   "menu": {
     "liOne": "The Creator's Corner",
     "liTwo": "Showtime: The Gallery"
