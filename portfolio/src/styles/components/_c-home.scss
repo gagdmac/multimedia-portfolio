@@ -1,7 +1,17 @@
-.gagd {
-}
-.animated-element {
-  padding: 10px;
-  border: 1px solid #ddd;
-  cursor: pointer; /* Optional: Set a pointer cursor for hover effect */
+//////////////////////////////////////
+///////////// RESPONSIVE ////////////
+/////////// ACCESIBILITY ///////////
+///////////////////////////////////
+
+//MEDIA
+@include respond-below(sm) {
+  .ux-ui-gagd-med {
+    width: 10%;
+  }
+
+  .gagd {
+    svg {
+      width: 100% !important;
+    }
+  }
 }

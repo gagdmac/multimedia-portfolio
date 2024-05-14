@@ -19,31 +19,31 @@ export class HomeComponent implements OnInit {
 
     elements.forEach((element: HTMLElement) => {
       element.addEventListener('mouseenter', () => {
-        this.animateOnHover(element);
+        this.gagdOnHover(element);
       });
 
       element.addEventListener('mouseleave', () => {
-        this.resetAnimation(element);
+        this.resetgagOnHover(element);
       });
     });
   }
 
-  private animateOnHover(element: HTMLElement): void {
+  private gagdOnHover(element: HTMLElement): void {
     anime({
       targets: element,
       opacity: 0,
-      duration: 300,
+      duration: 1000,
       easing: 'easeInOutQuad',
       loop: false,
     });
   }
 
-  private resetAnimation(element: HTMLElement): void {
+  private resetgagOnHover(element: HTMLElement): void {
     anime({
       targets: element,
       opacity: 1,
-      easing: 'easeInOutQuad',
-      duration: 300,
+      easing: 'easeInOutExpo',
+      duration: 10000,
     });
   }
 }
