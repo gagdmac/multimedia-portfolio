@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import anime from 'animejs/lib/anime.es.js';
 
 @Component({
@@ -6,21 +6,44 @@ import anime from 'animejs/lib/anime.es.js';
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
-  //call function Oninit
-  ngOnInit() {
-    this.animateSquare();
+  constructor(private elementRef: ElementRef) {}
+
+  ngOnInit(): void {
+    this.setupHoverAnimation();
   }
 
-  //Animejs function
-  animateSquare() {
-    const square = document.querySelector('.square');
-    anime({
-      targets: square,
-      translateX: '250px',
+  private setupHoverAnimation(): void {
+    const elements = this.elementRef.nativeElement.querySelectorAll(
+      '#cabeza, #ojos, #lentes, #cara, #boca'
+    ); // Use querySelectorAll
 
-      rotate: '1turn',
-      duration: 1000,
+    elements.forEach((element: HTMLElement) => {
+      element.addEventListener('mouseenter', () => {
+        this.animateOnHover(element);
+      });
+
+      element.addEventListener('mouseleave', () => {
+        this.resetAnimation(element);
+      });
+    });
+  }
+
+  private animateOnHover(element: HTMLElement): void {
+    anime({
+      targets: element,
+      opacity: 0,
+      duration: 300,
       easing: 'easeInOutQuad',
+      loop: false,
+    });
+  }
+
+  private resetAnimation(element: HTMLElement): void {
+    anime({
+      targets: element,
+      opacity: 1,
+      easing: 'easeInOutQuad',
+      duration: 300,
     });
   }
 }
