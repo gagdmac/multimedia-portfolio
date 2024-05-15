@@ -2,22 +2,22 @@
 /// FOTNS ///
 ////////////
 
-.fs {
-  &-0 {
-    font-size: rem-calc(56);
-  }
+// .fs {
+//   &-0 {
+//     font-size: rem-calc(56);
+//   }
 
-  &-01 {
-    font-size: rem-calc(53.1);
-  }
-  &-02 {
-    font-size: rem-calc(51.52);
-  }
+//   &-01 {
+//     font-size: rem-calc(53.1);
+//   }
+//   &-02 {
+//     font-size: rem-calc(51.52);
+//   }
 
-  &-A {
-    font-size: rem-calc(131.4);
-  }
-}
+//   &-A {
+//     font-size: 17vw;
+//   }
+// }
 
 ////////////////
 /// MARGINS ///
@@ -32,6 +32,9 @@
   }
 
   &t {
+    &-n0 {
+      margin-top: rem-calc(-200) !important;
+    }
     &-n1 {
       margin-top: rem-calc(-300) !important;
     }
@@ -53,7 +56,7 @@ p {
 .l {
   &h {
     &-0 {
-      line-height: 0.8 !important;
+      line-height: 0.9 !important;
     }
   }
 }
@@ -73,8 +76,87 @@ p {
 /////////// ACCESIBILITY ///////////
 ///////////////////////////////////
 
-//MEDIA
-@include respond-below(sm) {
+//MEDIA ABOVE
+
+@include respond-above(zz) {
+  //en
+  .fs {
+    &-0 {
+      font-size: rem-calc(35.2);
+    }
+
+    &-01 {
+      font-size: rem-calc(33.6);
+    }
+    &-02 {
+      font-size: rem-calc(33);
+    }
+
+    &-A {
+      font-size: 26vw !important;
+    }
+  }
+}
+
+@include respond-above(zx) {
+  //en
+  .fs {
+    &-0 {
+      font-size: rem-calc(42.2);
+    }
+
+    &-01 {
+      font-size: rem-calc(40.6);
+    }
+    &-02 {
+      font-size: rem-calc(40);
+    }
+
+    &-A {
+      font-size: 23vw !important;
+    }
+  }
+}
+
+@include respond-above(sm) {
+  //en
+  .fs {
+    &-0 {
+      font-size: rem-calc(49);
+    }
+
+    &-01 {
+      font-size: rem-calc(46.6);
+    }
+    &-02 {
+      font-size: rem-calc(46);
+    }
+    &-A {
+      font-size: 15vw !important;
+    }
+  }
+}
+@include respond-above(md) {
+  //en
+  .fs {
+    &-0 {
+      font-size: rem-calc(52);
+    }
+
+    &-01 {
+      font-size: rem-calc(50.6);
+    }
+    &-02 {
+      font-size: rem-calc(50);
+    }
+
+    &-A {
+      font-size: 12vw !important;
+    }
+  }
+}
+@include respond-above(lg) {
+  //en
   .fs {
     &-0 {
       font-size: rem-calc(48);
@@ -88,7 +170,53 @@ p {
     }
 
     &-A {
-      font-size: rem-calc(113.28);
+      font-size: 8vw !important;
     }
+  }
+}
+@include respond-above(xxl) {
+  //en
+  .fs {
+    &-0 {
+      font-size: rem-calc(48);
+    }
+
+    &-01 {
+      font-size: rem-calc(45.6);
+    }
+    &-02 {
+      font-size: rem-calc(44.16);
+    }
+
+    &-A {
+      font-size: 6.3vw !important;
+    }
+  }
+}
+@include respond-above(xxxl) {
+  //en
+  .fs {
+    &-0 {
+      font-size: rem-calc(48);
+    }
+
+    &-01 {
+      font-size: rem-calc(45.6);
+    }
+    &-02 {
+      font-size: rem-calc(44.16);
+    }
+
+    &-A {
+      font-size: 4.4vw !important;
+    }
+  }
+}
+
+// MEDIA BELLOW
+
+@include respond-below(mdl) {
+  .u-svg {
+    width: 100% !important;
   }
 }
