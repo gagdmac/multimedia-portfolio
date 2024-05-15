@@ -29,78 +29,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!--APP MENU toggler ENDS-->
-
-        <!--APP LANGUAGUES SELECTION STARTS-->
-
-        <!-- <form [formGroup]="form">
-          <dynamic-form
-            [model]="model"
-            [fields]="fields"
-            [form]="form"
-          ></dynamic-form>
-        </form> -->
-
-        <!-- <div class="dropdown">
-          <button
-            class="btn btn-light dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton1"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <img
-              src="../assets/img/language-light.svg"
-              alt="Seleccion de idioma"
-              height="25"
-              class="d-inline-block"
-            />
-          </button>
-          <ul
-            class="dropdown-menu"
-            aria-labelledby="dropdownMenuButton1"
-            #langSelect
-            (change)="translate.use(langSelect.value)"
-          >
-            <li>
-              <button class="dropdown-item" (click)="useLanguage('es')">
-                Español
-              </button>
-            </li>
-            <li>
-              <button class="dropdown-item" (click)="useLanguage('en')">
-                English
-              </button>
-            </li>
-          </ul>
-        </div> -->
-
-        <div class="d-flex bg-body p-1 px-2 rounded">
-          <img
-            src="../assets/img/language-light.svg"
-            alt="Seleccion de idioma"
-            height="25"
-            class="d-inline-block"
-          />
-          <select
-            class="select select-bn"
-            #langSelect
-            (change)="translate.use(langSelect.value)"
-          >
-            <option
-              *ngFor="let lang of translate.getLangs()"
-              [value]="lang"
-              [selected]="lang === translate.currentLang"
-            >
-              {{ lang }}
-            </option>
-          </select>
-        </div>
-
-        <!--APP LANGUAGUES SELECTION ENDS-->
-
         <!--APP MENU STARTS-->
         <div
-          class="collapse navbar-collapse d-flex justify-content-end"
+          class="collapse navbar-collapse d-lg-flex justify-content-lg-end"
           id="navbarSupportedContent"
         >
           <span>
@@ -147,6 +78,30 @@
               </li>
             </ul>
           </span>
+
+          <!--APP LANGUAGUES SELECTION STARTS-->
+          <div class="d-flex bg-body p-1 px-2 rounded ms-lg-4">
+            <img
+              src="../assets/img/language-light.svg"
+              alt="Seleccion de idioma"
+              height="25"
+              class="d-inline-block"
+            />
+            <select
+              class="select select-bn"
+              #langSelect
+              (change)="translate.use(langSelect.value)"
+            >
+              <option
+                *ngFor="let lang of translate.getLangs()"
+                [value]="lang"
+                [selected]="lang === translate.currentLang"
+              >
+                {{ lang }}
+              </option>
+            </select>
+          </div>
+          <!--APP LANGUAGUES SELECTION ENDS-->
         </div>
         <!--APP MENU ENDS-->
       </div>
