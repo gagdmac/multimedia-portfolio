@@ -84,26 +84,41 @@
           </span>
 
           <!--APP LANGUAGUES SELECTION STARTS-->
-          <div class="d-flex bg-body p-1 px-2 rounded ms-lg-4">
-            <!-- <img
+          <div
+            class="d-flex bg-body p-1 px-2 rounded ms-lg-4 align-items-center"
+          >
+            <img
               src="../assets/img/language-light.svg"
               alt="Seleccion de idioma"
               height="25"
-              class="d-inline-block"
-            /> -->
+              class="d-inline-block me-2"
+            />
 
-            <!-- <div class="dropdown">
-              <button
+            <div class="dropdown">
+              <!-- <button
                 class="btn dropdown-toggle"
                 type="button"
                 id="dropdownMenuButton1"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                {{ "languages.languageSelection" | translate }}
-              </button>
 
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              </button> -->
+              {{ "languages.languageSelection" | translate }}
+              <select
+                class="select select-bn"
+                #langSelect
+                (change)="translate.use(langSelect.value)"
+              >
+                <option
+                  *ngFor="let lang of translate.getLangs()"
+                  [value]="lang"
+                  [selected]="lang === translate.currentLang"
+                >
+                  {{ lang }}
+                </option>
+              </select>
+              <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li>
                   <a
                     class="dropdown-item"
@@ -120,8 +135,8 @@
                     >INGLES</a
                   >
                 </li>
-              </ul>
-            </div> -->
+              </ul> -->
+            </div>
 
             <!-- <select (change)="onSelectionChange($event)">
               <option
@@ -216,7 +231,7 @@
             <!--//////////////////////////////////////////////
               este es el codigo final ok de todos.
             /////////////////////////////////////////////////-->
-
+            <!--
             <select
               class="select select-bn"
               #langSelect
@@ -229,7 +244,7 @@
               >
                 {{ lang }}
               </option>
-            </select>
+            </select> -->
 
             <!--//////////////////////////////////////////////
                este es el codigo final ok de todos.
