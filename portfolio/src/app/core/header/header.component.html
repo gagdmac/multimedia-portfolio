@@ -1,7 +1,3 @@
-<!-- <select (change)="onSelectionChange($event)">
-  <option value="show">Show Element</option>
-  <option value="hide">Hide Element</option>
-</select> -->
 <header class="container-fluid bg-dark cb3">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -10,7 +6,7 @@
         <span class="me-4">
           <a aria-current="page" routerLink="/" routerLinkActive="active">
             <img
-              src="../assets/img/gagd-logo.svg"
+              src="../../../assets/img/gagd-logo.svg"
               alt="Gabriel Garcia LOGO"
               width="40"
               height="22"
@@ -95,15 +91,6 @@
             />
 
             <div class="dropdown">
-              <!-- <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-
-              </button> -->
               {{ "languages.languageSelection" | translate }}
               <select
                 class="select select-bn"
@@ -118,137 +105,7 @@
                   {{ lang }}
                 </option>
               </select>
-              <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    value="show"
-                    (click)="useLanguage('es')"
-                    >ESPAÑOL</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    value="hide"
-                    (click)="useLanguage('en')"
-                    >INGLES</a
-                  >
-                </li>
-              </ul> -->
             </div>
-
-            <!-- <select (change)="onSelectionChange($event)">
-              <option
-                value="show"
-                (click)="useLanguage('es')"
-                class="dropdown-item"
-              >
-                ES
-              </option>
-              <option
-                value="hide"
-                (click)="useLanguage('en')"
-                class="dropdown-item"
-              >
-                EN
-              </option>
-            </select> -->
-
-            <!-- <button
-              value="show"
-              class="dropdown-item"
-              (click)="useLanguage('es')"
-            >
-              Español
-            </button> -->
-            <!-- <button
-              value="hide"
-              class="dropdown-item"
-              (click)="useLanguage('en')"
-            >
-              English
-            </button> -->
-
-            <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li>
-                <button
-                  value="show"
-                  class="dropdown-item"
-                  (click)="useLanguage('es')"
-                >
-                  Español
-                </button>
-              </li>
-              <li>
-                <button
-                  value="hide"
-                  class="dropdown-item"
-                  (click)="useLanguage('en')"
-                >
-                  English
-                </button>
-              </li>
-            </ul> -->
-
-            <!--//////////////////////////////////////////////
-              este es el primer codigo de todos. no usar mas
-            /////////////////////////////////////////////////-->
-
-            <!-- <label for="cars">Choose a car:</label>
-            <select name="cars" (change)="onSelectionChange($event)">
-              <option value="show">
-                <a (click)="useLanguage('es')"></a>Show Element
-              </option>
-              <option value="hide">
-                <a (click)="useLanguage('es')"></a>Hide Element
-              </option>
-            </select> -->
-
-            <!-- <button class="dropdown-item" (click)="useLanguage('es')">
-              Español
-            </button>
-            <button class="dropdown-item" (click)="useLanguage('en')">
-              English
-            </button> -->
-            <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li>
-                <button class="dropdown-item" (click)="useLanguage('es')">
-                  Español
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item" (click)="useLanguage('en')">
-                  English
-                </button>
-              </li>
-            </ul> -->
-
-            <!--//////////////////////////////////////////////
-              este es el primer codigo de todos. no usar mas
-            /////////////////////////////////////////////////-->
-
-            <!--//////////////////////////////////////////////
-              este es el codigo final ok de todos.
-            /////////////////////////////////////////////////-->
-            <!--
-            <select
-              class="select select-bn"
-              #langSelect
-              (change)="translate.use(langSelect.value)"
-            >
-              <option
-                *ngFor="let lang of translate.getLangs()"
-                [value]="lang"
-                [selected]="lang === translate.currentLang"
-              >
-                {{ lang }}
-              </option>
-            </select> -->
-
-            <!--//////////////////////////////////////////////
-               este es el codigo final ok de todos.
-            /////////////////////////////////////////////////-->
           </div>
           <!--APP LANGUAGUES SELECTION ENDS-->
         </div>
