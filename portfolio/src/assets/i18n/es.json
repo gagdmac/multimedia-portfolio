@@ -15,11 +15,11 @@
   },
 
   "home": {
-    "titleA": "Accessible",
-    "titleB": "User",
-    "titleC": "Experience",
-    "titleD": "&",
-    "titleE": "Interface",
+    "titleA": "UX | UI",
+    "titleB": "para",
+    "titleC": "experiencia",
+    "titleD": "accesible",
+    "titleE": "",
     "TextParagraphOne": " <b>El diseño centrado en el ser humano (DCH)</b> es un enfoque de la resolución de problemas que<b>da prioridad a las necesidades</b>, <b>deseos</b>, y <b>comportamientos de las personas</b> que van a utilizar el producto, sistema o servicio.",
     "TextParagraphTwo": " Implica comprender las perspectivas de los <b>usuarios</b> a través de la <b>observación</b>, <b>entrevistas</b>,y <b>ejercicios de empatía</b>.",
     "TextParagraphThree": " <b>Al centrarse en la experiencia humana</b>, el HCD pretende crear productos y servicios intuitivos, fáciles de usar y, en última instancia, más eficaces para afrontar los retos del mundo real."

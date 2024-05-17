@@ -1,7 +1,7 @@
-<select (change)="onSelectionChange($event)">
+<!-- <select (change)="onSelectionChange($event)">
   <option value="show">Show Element</option>
   <option value="hide">Hide Element</option>
-</select>
+</select> -->
 <header class="container-fluid bg-dark cb3">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -85,14 +85,14 @@
 
           <!--APP LANGUAGUES SELECTION STARTS-->
           <div class="d-flex bg-body p-1 px-2 rounded ms-lg-4">
-            <img
+            <!-- <img
               src="../assets/img/language-light.svg"
               alt="Seleccion de idioma"
               height="25"
               class="d-inline-block"
-            />
+            /> -->
 
-            <div class="dropdown">
+            <!-- <div class="dropdown">
               <button
                 class="btn dropdown-toggle"
                 type="button"
@@ -121,9 +121,9 @@
                   >
                 </li>
               </ul>
-            </div>
+            </div> -->
 
-            <select (change)="onSelectionChange($event)">
+            <!-- <select (change)="onSelectionChange($event)">
               <option
                 value="show"
                 (click)="useLanguage('es')"
@@ -138,23 +138,24 @@
               >
                 EN
               </option>
-            </select>
+            </select> -->
 
-            <button
+            <!-- <button
               value="show"
               class="dropdown-item"
               (click)="useLanguage('es')"
             >
               Español
-            </button>
-            <button
+            </button> -->
+            <!-- <button
               value="hide"
               class="dropdown-item"
               (click)="useLanguage('en')"
             >
               English
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            </button> -->
+
+            <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li>
                 <button
                   value="show"
@@ -173,9 +174,29 @@
                   English
                 </button>
               </li>
-            </ul>
+            </ul> -->
 
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <!--//////////////////////////////////////////////
+              este es el primer codigo de todos. no usar mas
+            /////////////////////////////////////////////////-->
+
+            <!-- <label for="cars">Choose a car:</label>
+            <select name="cars" (change)="onSelectionChange($event)">
+              <option value="show">
+                <a (click)="useLanguage('es')"></a>Show Element
+              </option>
+              <option value="hide">
+                <a (click)="useLanguage('es')"></a>Hide Element
+              </option>
+            </select> -->
+
+            <!-- <button class="dropdown-item" (click)="useLanguage('es')">
+              Español
+            </button>
+            <button class="dropdown-item" (click)="useLanguage('en')">
+              English
+            </button> -->
+            <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li>
                 <button class="dropdown-item" (click)="useLanguage('es')">
                   Español
@@ -186,9 +207,17 @@
                   English
                 </button>
               </li>
-            </ul>
+            </ul> -->
 
-            <!-- <select
+            <!--//////////////////////////////////////////////
+              este es el primer codigo de todos. no usar mas
+            /////////////////////////////////////////////////-->
+
+            <!--//////////////////////////////////////////////
+              este es el codigo final ok de todos.
+            /////////////////////////////////////////////////-->
+
+            <select
               class="select select-bn"
               #langSelect
               (change)="translate.use(langSelect.value)"
@@ -200,7 +229,11 @@
               >
                 {{ lang }}
               </option>
-            </select> -->
+            </select>
+
+            <!--//////////////////////////////////////////////
+               este es el codigo final ok de todos.
+            /////////////////////////////////////////////////-->
           </div>
           <!--APP LANGUAGUES SELECTION ENDS-->
         </div>
