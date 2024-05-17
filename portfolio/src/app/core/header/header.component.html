@@ -1,3 +1,7 @@
+<select (change)="onSelectionChange($event)">
+  <option value="show">Show Element</option>
+  <option value="hide">Hide Element</option>
+</select>
 <header class="container-fluid bg-dark cb3">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -87,7 +91,104 @@
               height="25"
               class="d-inline-block"
             />
-            <select
+
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                {{ "languages.languageSelection" | translate }}
+              </button>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    value="show"
+                    (click)="useLanguage('es')"
+                    >ESPAÑOL</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    value="hide"
+                    (click)="useLanguage('en')"
+                    >INGLES</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <select (change)="onSelectionChange($event)">
+              <option
+                value="show"
+                (click)="useLanguage('es')"
+                class="dropdown-item"
+              >
+                ES
+              </option>
+              <option
+                value="hide"
+                (click)="useLanguage('en')"
+                class="dropdown-item"
+              >
+                EN
+              </option>
+            </select>
+
+            <button
+              value="show"
+              class="dropdown-item"
+              (click)="useLanguage('es')"
+            >
+              Español
+            </button>
+            <button
+              value="hide"
+              class="dropdown-item"
+              (click)="useLanguage('en')"
+            >
+              English
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <button
+                  value="show"
+                  class="dropdown-item"
+                  (click)="useLanguage('es')"
+                >
+                  Español
+                </button>
+              </li>
+              <li>
+                <button
+                  value="hide"
+                  class="dropdown-item"
+                  (click)="useLanguage('en')"
+                >
+                  English
+                </button>
+              </li>
+            </ul>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <button class="dropdown-item" (click)="useLanguage('es')">
+                  Español
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item" (click)="useLanguage('en')">
+                  English
+                </button>
+              </li>
+            </ul>
+
+            <!-- <select
               class="select select-bn"
               #langSelect
               (change)="translate.use(langSelect.value)"
@@ -99,7 +200,7 @@
               >
                 {{ lang }}
               </option>
-            </select>
+            </select> -->
           </div>
           <!--APP LANGUAGUES SELECTION ENDS-->
         </div>

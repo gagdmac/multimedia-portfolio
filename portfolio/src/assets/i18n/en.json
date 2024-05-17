@@ -1,7 +1,8 @@
 {
   "languages": {
     "espanol": "Español",
-    "english": "English"
+    "english": "English",
+    "languageSelection": "Language"
   },
   "menu": {
     "liOne": "The Creator's Corner",
@@ -18,6 +19,9 @@
     "titleB": "User",
     "titleC": "Experience",
     "titleD": "& ",
-    "titleE": "Interface"
+    "titleE": "Interface",
+    "TextParagraphOne": " <b>Human-centred design (HCD)</b> is an approach to problem-solving that <b>prioritizes the needs</b>, <b>desires</b>, and <b>behaviours of the people</b> who will use the product, system, or service.",
+    "TextParagraphTwo": " It involves understanding <b>users</b> perspectives through <b>observation</b>, <b>interviews</b>,and <b>empathy-building exercises</b>.",
+    "TextParagraphThree": " <b>By focusing on the human experience,</b> HCD aims to create products and services that are intuitive, user-friendly, and ultimately more effective in addressing real-world challenges."
   }
 }

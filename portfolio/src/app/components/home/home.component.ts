@@ -1,12 +1,16 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import anime from 'animejs/lib/anime.es.js';
+import { SharedService } from '../../shared.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
-  constructor(private elementRef: ElementRef) {}
+  constructor(
+    private elementRef: ElementRef,
+    public sharedService: SharedService
+  ) {}
 
   ngOnInit(): void {
     this.setupHoverAnimation();
