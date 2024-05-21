@@ -23,5 +23,14 @@
     "TextParagraphOne": " <b>Human-centred design (HCD)</b> is an approach to problem-solving that <b>prioritizes the needs</b>, <b>desires</b>, and <b>behaviours of the people</b> who will use the product, system, or service.",
     "TextParagraphTwo": " It involves understanding <b>users</b> perspectives through <b>observation</b>, <b>interviews</b>,and <b>empathy-building exercises</b>.",
     "TextParagraphThree": " <b>By focusing on the human experience,</b> HCD aims to create products and services that are intuitive, user-friendly, and ultimately more effective in addressing real-world challenges."
+  },
+
+  "me": {
+    "titleA": "About",
+    "titleB": "Me",
+    "TextParagraphOne": " My name is <br><b>Gabriel Arturo Garcia Diaz.",
+    "TextParagraphTwo": " <b>I love creating simple but comprehensive solutions </b> for all kinds of users <b>as an Accessibility lover.</b>",
+    "TextParagraphThree": "With a background in <b>graphic design</b>, <b>UX/UI web design</b> and <b>graphic arts production</b> I’m constantly looking for new ways to guarantee my designs are stunning to view but also incredibly user-friendly.",
+    "TextParagraphFour": "<b>As an Accessibility programmer and web designer</b> and with my graphic design skills, I combine my code passion and a whole bag of design tricks to <b>ensure every project I touch is a masterpiece. </b>"
   }
 }

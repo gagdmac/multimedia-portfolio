@@ -1,5 +1,5 @@
-<header class="container-fluid bg-dark cb3">
-  <div class="container">
+<header class="container-fluid bg-dark cb3 position-fixed top-0 u__position">
+  <div class="container cb2">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <!--LOGO STARTS-->
@@ -91,8 +91,11 @@
             />
 
             <div class="dropdown">
-              {{ "languages.languageSelection" | translate }}
+              <label for="{{ 'languages.languageSelection' | translate }}">{{
+                "languages.languageSelection" | translate
+              }}</label>
               <select
+                id="{{ 'languages.languageSelection' | translate }}"
                 class="select select-bn"
                 #langSelect
                 (change)="translate.use(langSelect.value)"

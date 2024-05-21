@@ -1,21 +1,58 @@
-<div class="d-md-flex col">
-  <div class="p-3 fs-0 open-sans open-sans-titles">
-    <p>
-      <span class="">{{ "home.titleA" | translate }}</span>
-    </p>
-    <p>
-      <span class="fs-A ml-n1 cb3">{{ "home.titleB" | translate }}</span>
-    </p>
-    <p>
-      <span class="fs-01">{{ "home.titleC" | translate }}</span>
-    </p>
-    <p>
-      <span class="">{{ "home.titleD" | translate }}</span>
-    </p>
-    <p>
-      <span class="fs-02">{{ "home.titleE" | translate }}</span>
-    </p>
-  </div>
+<div class="container-fluid mb-5 mt-4 cb1">
+  <div class="row">
+    <div class="p-3 text-center col-md-6 col-lg-4 col-xl-4 cb2">
+      <div class="div-A fs-0 open-sans open-sans-titles">
+        <p>
+          <span class="">{{ "me.titleA" | translate }}</span>
+        </p>
+        <p>
+          <span class="fs-A gc-2 ml-n1">{{ "me.titleB" | translate }}</span>
+        </p>
+      </div>
 
-  <div class="p-3 col">ME</div>
+      <div class="mt-4">
+        <p
+          class="lh-lg px-xl-5"
+          [innerHTML]="'me.TextParagraphOne' | translate"
+        ></p>
+        <p
+          class="lh-lg px-xl-5"
+          [innerHTML]="'me.TextParagraphTwo' | translate"
+        ></p>
+        <p
+          class="lh-lg px-xl-5"
+          [innerHTML]="'me.TextParagraphThree' | translate"
+        ></p>
+        <p
+          class="lh-lg px-xl-5"
+          [innerHTML]="'me.TextParagraphFour' | translate"
+        ></p>
+      </div>
+    </div>
+
+    <div class="p-3 col-md-6 col-lg-8 col-xl-8 cb2">
+      <div class="me">
+        <div class="container cb4">
+          <div class="row">
+            <div class="col px-2 py-5 col-md-12 col-lg-6 cb1">Disciplines</div>
+            <div class="col px-2 py-5 col-md-12 col-lg-6 cb2">Column</div>
+            <div class="col px-2 py-5 col-md-12 col-lg-6 cb2">Column</div>
+            <div class="col px-2 py-5 col-md-12 col-lg-6 cb2">Column</div>
+            <div class="col px-2 py-5 col-md-12 col-lg-6 cb2">Column</div>
+            <div class="col col-md-12 col-lg-6 cb2">
+              <div class="card u-border-none">
+                <div class="card-body">
+                  <p class="card-title lead fw-bold">Card title</p>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

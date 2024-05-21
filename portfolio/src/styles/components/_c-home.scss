@@ -4,14 +4,33 @@
 ///////////////////////////////////
 
 //MEDIA
-@include respond-below(sm) {
-  .ux-ui-gagd-med {
-    width: 10%;
-  }
+// @include respond-below(sm) {
+//   .ux-ui-gagd-med {
+//     width: 10%;
+//   }
 
-  .gagd {
-    svg {
-      width: 100% !important;
-    }
-  }
+// .gagd {
+//   svg {
+//     width: 100% !important;
+//   }
+// }
+// }
+
+// .gagd {
+//   width: 100%;
+//   background-image: url("../../assets/img/ux-ui-gagd-med.svg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 0;
+//   padding: 0; /* reset */
+//   padding-bottom: calc(100% * 3 / 4);
+//   svg {
+//     width: 100% !important;
+//   }
+// }
+svg {
+  width: 100% !important;
+  background-size: cover;
+  height: 100%;
+  padding: 0; /* reset */
 }

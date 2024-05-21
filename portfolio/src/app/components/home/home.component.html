@@ -1,43 +1,85 @@
-<div class="d-md-flex mb-5 mt-4 cb1">
-  <!-- <div *ngIf="!sharedService.hideElement">Element to hide</div> -->
-  <!--col-->
-  <div class="p-3 text-center col-md-6 col-lg-5 col-xl-4 cb2">
-    <div class="div-A fs-0 open-sans open-sans-titles">
-      <p>
-        <span class="">{{ "home.titleA" | translate }}</span>
-      </p>
-      <p>
-        <span class="fs-A gc-1 ml-n1">{{ "home.titleB" | translate }}</span>
-      </p>
-      <p>
-        <span class="fs-01">{{ "home.titleC" | translate }}</span>
-      </p>
-      <p>
-        <span class="fs-02">{{ "home.titleD" | translate }}</span>
-        <span class="fs-02 text-primary">{{ "home.titleE" | translate }}</span>
-      </p>
+<div class="d-md-flex mb-5 mt-xxl-4 cb1">
+  <div class="p-3 text-center col-md-6 col-lg-5 col-xl-4 mt-2 cb2">
+    <div
+      class="div-A fs-0 open-sans open-sans-titles"
+      *ngIf="'en' === translate.currentLang"
+    >
+      <div class="u__f--ls4">
+        <p>
+          <span class="u__f--s0">{{ "home.titleA" | translate }}</span>
+        </p>
+      </div>
+      <div class="u__f--ls10">
+        <p>
+          <span class="fs-A gc-1 ml-n1">{{ "home.titleB" | translate }}</span>
+        </p>
+      </div>
+      <div class="mt-1 u__f--ls4">
+        <p>
+          <span class="fs-01">{{ "home.titleC" | translate }}</span>
+        </p>
+      </div>
+      <div class="mt-2 u__f--ls4">
+        <p>
+          <span class="fs-02">{{ "home.titleD" | translate }}</span>
+          <span class="fs-02 text-primary">{{
+            "home.titleE" | translate
+          }}</span>
+        </p>
+      </div>
+    </div>
+    <div
+      class="div-A fs-0 open-sans open-sans-titles"
+      *ngIf="'es' === translate.currentLang"
+    >
+      <div class="u__f--ls4">
+        <p>
+          <span class="u__f--s0">{{ "home.titleA" | translate }}</span>
+        </p>
+      </div>
+      <div class="u__f--ls10">
+        <p>
+          <span class="fs-A gc-1 ml-n1">{{ "home.titleB" | translate }}</span>
+        </p>
+      </div>
+      <div class="mt-1 u__f--ls4">
+        <p>
+          <span class="fs-01">{{ "home.titleC" | translate }}</span>
+        </p>
+      </div>
+      <div class="mt-2 u__f--ls4">
+        <p>
+          <span class="fs-02">{{ "home.titleD" | translate }}</span>
+          <span class="fs-02 text-primary">{{
+            "home.titleE" | translate
+          }}</span>
+        </p>
+      </div>
     </div>
 
     <div class="mt-4">
       <p
-        class="lh-lg px-xxl-5"
+        class="lh-lg px-lg-1 px-xxl-3"
         [innerHTML]="'home.TextParagraphOne' | translate"
       ></p>
+      <br />
       <p
-        class="lh-lg px-xxl-5"
+        class="lh-lg px-lg-2 px-xxl-3"
         [innerHTML]="'home.TextParagraphTwo' | translate"
       ></p>
+      <br />
       <p
-        class="lh-lg px-xxl-5"
+        class="lh-lg px-lg-2 px-xxl-3"
         [innerHTML]="'home.TextParagraphThree' | translate"
       ></p>
     </div>
   </div>
 
-  <div class="p-3 col d-flex justify-content-center position-relative">
-    <div class="gagd">
+  <div
+    class="py-3 cb3 col d-flex justify-content-center position-relative me-5 mt-2"
+  >
+    <div class="">
       <svg
-        height="100%"
         class="u-svg"
         viewBox="0 0 730 716"
         fill="none"

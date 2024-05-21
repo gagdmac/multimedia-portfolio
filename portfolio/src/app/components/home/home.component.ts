@@ -1,6 +1,7 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import anime from 'animejs/lib/anime.es.js';
 import { SharedService } from '../../shared.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,7 @@ import { SharedService } from '../../shared.service';
 })
 export class HomeComponent implements OnInit {
   constructor(
+    public translate: TranslateService,
     private elementRef: ElementRef,
     public sharedService: SharedService
   ) {}
