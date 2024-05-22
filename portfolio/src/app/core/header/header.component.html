@@ -91,9 +91,10 @@
             />
 
             <div class="dropdown">
-              <label for="{{ 'languages.languageSelection' | translate }}">{{
-                "languages.languageSelection" | translate
-              }}</label>
+              <label for="{{ 'languages.languageSelection' | translate }}">
+                {{ "languages.languageSelection" | translate }}
+              </label>
+
               <select
                 id="{{ 'languages.languageSelection' | translate }}"
                 class="select select-bn"
@@ -105,7 +106,7 @@
                   [value]="lang"
                   [selected]="lang === translate.currentLang"
                 >
-                  {{ lang }}
+                  {{ lang | translate }}
                 </option>
               </select>
             </div>

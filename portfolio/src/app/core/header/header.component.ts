@@ -16,9 +16,9 @@ export class HeaderComponent {
     public translate: TranslateService,
     private sharedService: SharedService
   ) {
+    translate.addLangs(['en', 'es']);
     translate.setDefaultLang('en');
     translate.use('en');
-    translate.addLangs(['en', 'es']);
 
     const browserLang = translate.getBrowserLang();
     translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
