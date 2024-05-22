@@ -81,18 +81,28 @@
 
           <!--APP LANGUAGUES SELECTION STARTS-->
           <div
-            class="d-flex bg-body p-1 px-2 rounded ms-lg-4 align-items-center"
+            class="d-flex bg-body py-2 px-2 rounded ms-lg-4 align-items-center"
           >
-            <img
+            <!-- <img
               src="../assets/img/language-light.svg"
               alt="Seleccion de idioma"
               height="25"
               class="d-inline-block me-2"
-            />
+            /> -->
 
             <div class="dropdown">
               <label for="{{ 'languages.languageSelection' | translate }}">
-                {{ "languages.languageSelection" | translate }}
+                <span class="sr-only">
+                  {{ "languages.languageSelection" | translate }}</span
+                >
+                <span
+                  class="fi fi-gb px-3"
+                  *ngIf="'en' === translate.currentLang"
+                ></span>
+                <span
+                  class="fi fi-es px-3"
+                  *ngIf="'es' === translate.currentLang"
+                ></span>
               </label>
 
               <select
