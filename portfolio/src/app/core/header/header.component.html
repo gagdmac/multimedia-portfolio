@@ -105,14 +105,13 @@
                 <span class="sr-only">
                   {{ "languages.languageSelection" | translate }}</span
                 >
-                <span
-                  class="fi fi-gb px-3"
-                  *ngIf="'en' === translate.currentLang"
-                ></span>
-                <span
-                  class="fi fi-es px-3"
-                  *ngIf="'es' === translate.currentLang"
-                ></span>
+
+                <div *ngIf="'en' === translate.currentLang; else es">
+                  <span class="fi fi-gb px-3"></span>
+                </div>
+                <ng-template #es
+                  ><span class="fi fi-es px-3"></span
+                ></ng-template>
               </label>
 
               <select
