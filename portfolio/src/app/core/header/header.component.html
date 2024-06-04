@@ -29,12 +29,46 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!--APP MENU toggler ENDS-->
-        <!--APP MENU STARTS-->
+
+        <!--APP LANGUAGUES SELECTION STARTS-->
         <div
+          class="d-flex bg-body py-2 px-2 rounded ms-lg-4 align-items-center"
+        >
+          <div class="dropdown">
+            <label for="{{ 'languages.languageSelection' | translate }}">
+              <span class="sr-only">
+                {{ "languages.languageSelection" | translate }}</span
+              >
+
+              <div *ngIf="'en' === translate.currentLang; else es">
+                <span class="fi fi-gb px-3"></span>
+              </div>
+              <ng-template #es><span class="fi fi-es px-3"></span></ng-template>
+            </label>
+
+            <select
+              id="{{ 'languages.languageSelection' | translate }}"
+              class="select select-bn"
+              #langSelect
+              (change)="translate.use(langSelect.value)"
+            >
+              <option
+                *ngFor="let lang of translate.getLangs()"
+                [value]="lang"
+                [selected]="lang === translate.currentLang"
+              >
+                {{ lang | translate }}
+              </option>
+            </select>
+          </div>
+        </div>
+        <!--APP LANGUAGUES SELECTION ENDS-->
+        <!--APP MENU STARTS-->
+        <!-- <div
           class="collapse navbar-collapse d-lg-flex justify-content-lg-end"
           id="navbarSupportedContent"
-        >
-          <span>
+        > -->
+        <!-- <span>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
@@ -87,19 +121,12 @@
                 </ul>
               </li>
             </ul>
-          </span>
+          </span> -->
 
-          <!--APP LANGUAGUES SELECTION STARTS-->
-          <div
+        <!--APP LANGUAGUES SELECTION STARTS-->
+        <!-- <div
             class="d-flex bg-body py-2 px-2 rounded ms-lg-4 align-items-center"
           >
-            <!-- <img
-              src="../assets/img/language-light.svg"
-              alt="Seleccion de idioma"
-              height="25"
-              class="d-inline-block me-2"
-            /> -->
-
             <div class="dropdown">
               <label for="{{ 'languages.languageSelection' | translate }}">
                 <span class="sr-only">
@@ -129,9 +156,9 @@
                 </option>
               </select>
             </div>
-          </div>
-          <!--APP LANGUAGUES SELECTION ENDS-->
-        </div>
+          </div> -->
+        <!--APP LANGUAGUES SELECTION ENDS-->
+        <!-- </div> -->
         <!--APP MENU ENDS-->
       </div>
     </nav>
