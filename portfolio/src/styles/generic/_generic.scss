@@ -106,3 +106,27 @@ main {
 p {
   font-family: Open Sans;
 }
+
+//=======================================
+// =========== SKIP CONTENT =============
+//=======================================
+
+a.skip-to-content {
+  color: #21252a;
+  font-size: rem-calc(11);
+  position: absolute;
+  top: rem-calc(8);
+  left: rem-calc(140);
+  z-index: 1031;
+  font-weight: 400;
+  padding-top: rem-calc(2);
+
+  &:focus {
+    color: #ffffff;
+    outline: $focus !important;
+    box-shadow: none !important;
+    outline-style: $f-style;
+    outline-offset: rem-calc(1) !important;
+    color: #fff !important;
+  }
+}
