@@ -36,5 +36,9 @@
     "TextParagraphTwo": " <b>I love creating simple but comprehensive solutions </b> for all kinds of users <b>as an Accessibility lover.</b>",
     "TextParagraphThree": "With a background in <b>graphic design</b>, <b>UX/UI web design</b> and <b>graphic arts production</b> I’m constantly looking for new ways to guarantee my designs are stunning to view but also incredibly user-friendly.",
     "TextParagraphFour": "<b>As an Accessibility programmer and web designer</b> and with my graphic design skills, I combine my code passion and a whole bag of design tricks to <b>ensure every project I touch is a masterpiece. </b>"
+  },
+
+  "footer": {
+    "text": "2024 GAGD. All Rights Reserved."
   }
 }
